@@ -1,0 +1,218 @@
+.site-footer {
+  background-color: $footer-bg;
+}
+
+.footer-widget {
+  margin-bottom: 2rem;
+  .widget-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.125rem;
+    color: $widget-color;
+    text-transform: uppercase;
+    letter-spacing: 0.14rem;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: block;
+      color: $widget-color;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: 0.08rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      position: relative;
+
+      &:before {
+        content: "";
+        height: 1rem;
+        width: 0.25rem;
+        background-color: $secondary;
+        position: absolute;
+        left: -1rem;
+        top: 0;
+        display: none;
+      }
+      &:focus, &:hover  {
+        text-decoration: none;
+        &:before {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.copyright, .copyright-menu {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.copyright {
+  font-size: 1.125rem;
+  color: $black;
+  font-weight: 300;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  letter-spacing: 0.125rem;
+  span {
+    font-weight: 400;
+  }
+}
+.copyright-menu {
+  li {
+    display: inline;
+  }
+  a {
+    font-size: 1.125rem;
+    color: $black;
+    opacity: $opacity-light;
+    font-weight: 400;
+    margin: 0 1rem;
+    letter-spacing: 0.125rem;
+    
+    &:focus, &:hover {
+      opacity: $opacity;
+    }
+  }
+}
+.footer-social-links {
+  float: right;
+  li {
+    display: inline;
+  }
+  a {
+    font-size: 1.125rem;
+    margin-left: 1rem;
+    opacity: $opacity-light;
+
+    &:focus, &:hover {
+      opacity: $opacity;
+    }
+    i {
+      color: $primary;
+    }
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .widget {
+    margin-bottom: 2rem;
+    .widget-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    ul {
+      a {
+        font-size: 0.75rem;
+        margin-top: 0.875rem;
+        margin-bottom: 0.875rem;
+  
+        &:before {
+          left: -0.5rem;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-right: 0;
+  }
+  .footer-social-links {
+    width: 100%;
+    float: none;
+    text-align: center;
+    a {
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .widget {
+    margin-bottom: 2rem;
+    .widget-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    ul {
+      a {
+        font-size: 0.75rem;
+        margin-top: 0.875rem;
+        margin-bottom: 0.875rem;
+  
+        &:before {
+          left: -0.5rem;
+        }
+      }
+    }
+  }
+  .copyright {
+    margin-right: 0;
+  }
+  .footer-social-links {
+    width: 100%;
+    float: none;
+    text-align: center;
+    a {
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .widget {
+    margin-bottom: 2rem;
+    .widget-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    ul {
+      a {
+        font-size: 0.75rem;
+        margin-top: 0.875rem;
+        margin-bottom: 0.875rem;
+  
+        &:before {
+          left: -0.5rem;
+        }
+      }
+    }
+  }
+  .copyright, .copyright-menu {
+    display: inline;
+  }
+  .copyright {
+    margin-right: 0;
+    margin-top: 0.5rem;
+  }
+
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}

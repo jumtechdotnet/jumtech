@@ -1,0 +1,46 @@
+.about-story-info{
+  text-align: center;
+  background-color: $info-bg;
+}
+
+.about-info{
+  text-transform: uppercase;
+  padding:80px 0;
+  h1{
+      font-family: "Poppins-bold";
+      font-weight: 500;
+      letter-spacing: 0.6em;
+      font-size: 2rem;
+  }
+  hr{
+      margin-left: 14rem;
+      margin-right: 14rem;
+      height: .1rem;
+      border: none;
+      background: #000;
+      
+      
+  }
+  p{
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      letter-spacing: 0.35rem;
+      font-weight: 500;
+      padding-top:20px;
+      color:$about-text;
+  }
+}
+
+.about-content{
+  padding: 70px 40px;
+  text-align: justify;
+  p{
+      line-height: 1.7;
+      font-size: 1.1rem;
+      letter-spacing: 0.11rem;
+  }
+  span{
+      padding-top: 30px;
+  }
+ 
+}

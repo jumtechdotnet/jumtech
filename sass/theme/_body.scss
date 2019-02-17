@@ -1,0 +1,367 @@
+body {
+  background-color: $body-bg;
+  font-size: 16px;
+  font-size: 1rem;
+  color: $text-color;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+a {
+  color: $primary;
+  &:focus, &:hover {
+    color: $primary;
+    opacity: 0.87;
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.section {
+  padding: 3rem 0;
+  &.double {
+    padding-top: 15rem;
+  }
+}
+
+// Content classes
+.center {
+  text-align: center;
+}
+.content-inner {
+  display: inline-block;
+  width: 100%;
+  &.center {
+    text-align: center;
+  }
+}
+// Center Line
+.center-line {
+  width: 100%;
+  display: inline-block;
+
+  .line {
+    height: 1px;
+  }
+  .line-one {
+    box-shadow: $box-shadow;
+  }
+  .line-two {
+    border-top: $border-top;
+  }
+}
+// ul
+.ul-none {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.ul-none.horizontal li {
+  display: inline;
+}
+
+// heading
+.heading-block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  .heading-icon {
+    height: 110px;
+    margin-bottom: 60px;
+    display: inline-block;
+  }
+  .heading {
+    font-size: 2em;
+    color: $heading-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.28rem;
+    margin-bottom: 0.5em;
+  }
+  .heading-description {
+    color: $heading-des-color;
+    font-size: 1em;
+    letter-spacing: 0.12rem;
+    text-align: center;
+  }
+  .heading, .heading-description {
+    max-width: 55%;
+  }
+}
+
+// Work area
+.work-area {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1em;
+  padding: 0 2em;
+  .name {
+    font-size: 1.125em;
+    letter-spacing: 0.36rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+
+  }
+  .descripton {
+    font-size: 0.875em;
+    letter-spacing: 0.1rem;
+  }
+  .icon {
+    height: 7.5rem;
+    width: 7.5rem;
+    margin-bottom: 0.5rem;
+    background-image: url(../images/icons/service-icons.png);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    display: inline-block;
+  }
+  &.one .icon {
+    background-position-y: 0;
+    &:focus, &:hover {
+      background-position-y: -120px;
+    }
+  }
+  &.two .icon {
+    background-position-y: -240px;
+    &:focus, &:hover {
+      background-position-y: -360px;
+    }
+  }
+  &.three .icon {
+    background-position-y: -480px;
+    &:focus, &:hover {
+      background-position-y: -600px;
+    }
+  }
+  &.four .icon {
+    background-position-y: -720px;
+    &:focus, &:hover {
+      background-position-y: -840px;
+    }
+  }
+  &.five .icon {
+    background-position-y: -960px;
+    &:focus, &:hover {
+      background-position-y: -1080px;
+    }
+  }
+  &.six .icon {
+    background-position-y: -1200px;
+    &:focus, &:hover {
+      background-position-y: -1320px;
+    }
+  }
+}
+
+// Work stage
+.work-stage {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 11.5rem;
+
+  &:focus, &:hover {
+    .absolute-text {
+      display: block;
+    }
+  }
+  .box {
+    border: 1px solid $box-border-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11.25rem;
+    width: 11.25rem;
+    position: relative;
+
+    &:before, &:after {
+      content: "";
+      background-color: $text-color;
+      height: 1px;
+      width: 6.5rem;
+      position: absolute;
+      top: 50%;
+    }
+    &:before {
+      right: 50%;
+      margin-right: 2.5rem;
+    }
+    &:after {
+      left: 50%;
+      margin-left: 2.5rem;
+    }
+  }
+  .color-box {
+    height: 5rem;
+    width: 5rem;
+    background-color: $box-color;
+    position: relative;
+    display: inline-block;
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.36rem;
+      position: absolute;
+      top: 0;
+      left: -1rem;
+      z-index: 9;
+    }
+  }
+  .number {
+    color: $box-number-color;
+    width: 11.25rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.38rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 600;
+  }
+  .absolute-text {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    top: 6.5rem;
+    right: 6.5rem;
+    padding: 1.5rem 1rem;
+    border: 2px solid $box-color;
+    background-color: #fff;
+    width: 13rem;
+    text-align: justify;
+    font-size: 0.75rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .section {
+    padding: 2rem 0;
+    &.double {
+      padding-top: 10rem;
+    }
+  }
+  .promo-text {
+    h1 {
+      margin-top: 1rem;
+    }
+  }
+  .site-news {
+    .input-box {
+      width: 80%;
+    }
+  }
+  .site-motto {
+    display: none;
+  }
+  .heading-block {
+    .heading-icon {
+      height: 6rem;
+      margin-bottom: 2.5rem;
+    }
+    .heading, .heading-description {
+      max-width: 70%;
+    }
+  }
+
+  .work-stage {
+    .absolute-text {
+      top: 4.5rem;
+      right: 4rem;
+    }
+    .box:before, .box:after {
+      content: none;
+    }
+  }
+
+
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .work-area {
+    padding: 0 0;
+  }
+  .heading-block {
+    .heading-icon {
+      height: 6rem;
+      margin-bottom: 2.5rem;
+    }
+    .heading, .heading-description {
+      max-width: 70%;
+    }
+  }
+  .work-stage {
+    .absolute-text {
+      top: 4.5rem;
+      right: 4rem;
+    }
+    .box:before, .box:after {
+      content: none;
+    }
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section {
+    padding: 2rem 0;
+    &.double {
+      padding-top: 10rem;
+    }
+  }
+  .work-area {
+    padding: 0 0;
+  }
+  .work-stage {
+    .box {
+      height: 7.25rem;
+      width: 7.25rem;
+      .color-box {
+        h2 {
+          font-size: 0.75rem;
+          letter-spacing: .125rem;
+          top: 1rem;
+          left: 0.5rem;
+        }
+      }
+    }
+    .number {
+      width: 7.25rem;
+      font-size: 1.5rem;
+      letter-spacing: .125rem;
+      padding: 0.5rem 0;
+    }
+    .absolute-text {
+      top: 4.5rem;
+      right: 1.5rem;
+      padding: 0.5rem;
+      width: 12rem;
+      font-size: .75rem;
+    }
+  }
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}

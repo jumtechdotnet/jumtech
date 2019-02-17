@@ -1,0 +1,49 @@
+.site-main {
+  margin: 2rem 0;
+}
+
+// Contact Page
+.google-map {
+  width: 100%;
+  display: inline-block;
+}
+address {
+  margin-top: 1rem;
+  p {
+    display: flex;
+    align-items: flex-start;
+    i {
+      margin-right: 1rem;
+      font-size: 1.125rem;
+      color: $secondary;
+    }
+  }
+}
+.page-template-contact .widget-area {
+  .widget:first-child {
+    box-shadow: $dp2;
+  }
+  .widget:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Pricing
+.table {
+  border: thin solid $border-color;
+  .table-header {
+    background-color: $secondary;
+    color: #fff;
+  }
+
+  span {
+    color:  $secondary;
+    opacity: $opacity;
+  }
+  i {
+    font-size: 0.75rem;
+  }
+  a {
+    color:  $secondary;
+  }
+}

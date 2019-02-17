@@ -1,0 +1,109 @@
+form {
+
+  input[type="text"], 
+  input[type="email"], 
+  input[type="tel"], 
+  input[type="url"], 
+  input[type="date"], 
+  input[type="number"], 
+  select, 
+  textarea {
+    height: auto;
+    padding: 8px 16px;
+    line-height: 1.428571429;
+    color: #555 !important;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    text-shadow: none;
+
+  }
+  
+  button, 
+  input[type="submit"], 
+  input[type="button"] {
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: 400;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    user-select: none;
+    box-shadow: none;
+    background-color: $secondary;
+    text-shadow: none;
+    filter: none;
+    height: auto;
+    width: auto;
+    color: #fff;
+    &:focus, &:hover {
+      background-color: $icon-hover;
+      color: $black;
+    }
+  }
+  
+
+}
+
+// Forms
+.site-news {
+  input[type="email"] {
+    width: 22rem;
+    height: 2.5rem;
+    padding-left: 5%;
+    border-left: 5px solid $secondary;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    background-color: #e7e6e6;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border-radius: 0;
+    &:focus, &:hover {
+      outline: none;
+    }
+  }
+  input[type="submit"], 
+  input[type="button"] {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: $black;
+    background-image: url(../images/icons/arrow-right.png);
+    background-size: contain;
+    text-indent: -9999px;
+    margin-left: -0.125rem;
+    &:focus, &:hover {
+      opacity: $opacity;
+      background-color: $black;
+    }
+  }
+}
+
+.page-template-contact {
+  form {
+    width: 100%;
+    display: inline-block;
+    
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"], 
+    input[type="url"], 
+    input[type="date"], 
+    input[type="number"], 
+    select, 
+    textarea { 
+      width: 100%;
+    }
+  }
+
+
+}

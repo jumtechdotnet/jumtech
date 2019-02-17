@@ -1,0 +1,78 @@
+.faq-section{
+  background-color: $info-bg;
+  margin-top: 25px;
+  font-family: "Poppins-bold";
+  text-align:center;
+    
+}
+.faq-info{
+
+  h1{
+    font-size: 2.3rem;
+    letter-spacing: 0.5rem;
+    padding-top:4rem;
+  }
+  hr {
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 0.1rem;
+    border: none;
+    background: #000;
+  
+  }
+  p{
+    font-family: "Poppins-bold";
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    padding-bottom: 4rem;
+  }
+}
+
+// Accordion
+.accordion {
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border: thin solid #c4c4c4;
+    &:first-child {
+      border-top-left-radius: 0.625rem;
+      border-top-right-radius: 0.625rem;
+    }
+    &:last-child {
+      border-bottom-left-radius: 0.625rem;
+      border-bottom-right-radius: 0.625rem;
+    }
+    .card-header {
+      padding: 0;
+    }
+    button {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+      padding: 1rem 4rem;
+      font-weight: 500;
+      font-size: 0.875rem;
+      color: $black;
+      opacity: $opacity;
+    }
+  }
+  button {
+    outline: none;
+    border: 0;
+    padding: 0;
+    &:focus, &:hover {
+      outline: none;
+      border: 0;
+      box-shadow: none;
+      text-decoration: none;
+    }
+  }
+  .card-body {
+    padding: 0.75rem 4rem;
+    background-color: #fff;
+  }
+}
+// Accordion Ends

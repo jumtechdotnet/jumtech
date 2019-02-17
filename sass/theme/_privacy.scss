@@ -1,0 +1,23 @@
+.privacy-header{
+  background-color: $info-bg;
+  text-align:center;
+  font-weight: 600;
+}
+.privacy-info{
+  padding: 6rem 0;
+
+  h1{
+    font-size: 2.3rem;
+    letter-spacing: 0.5rem;
+  }
+
+  hr{
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 0.1rem;
+    border: none;
+    background: #000;
+  
+  }
+
+}
