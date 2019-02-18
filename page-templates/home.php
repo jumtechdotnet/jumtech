@@ -303,6 +303,21 @@ $container = get_theme_mod( 'jumtechWP_container_type' );
 
               <!-- team members -->
               <div class="person one">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/team/p0.jpg" alt="">
+                <div class="designation">
+                  <div class="name">
+                    Ramrachai Marma
+                  </div>
+                  <div class="role">
+                    Freelancer
+                  </div>
+                  <div class="area">
+                    WordPress Expert
+                  </div>
+                </div>
+              </div>
+              
+              <div class="person one">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/team/p1.jpg" alt="">
                 <div class="designation">
                   <div class="name">
