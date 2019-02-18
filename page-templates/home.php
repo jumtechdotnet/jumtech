@@ -309,10 +309,10 @@ $container = get_theme_mod( 'jumtechWP_container_type' );
                     Ramrachai Marma
                   </div>
                   <div class="role">
-                    Freelancer
+                    Front-end Developer
                   </div>
                   <div class="area">
-                    WordPress Expert
+                    Design & Development
                   </div>
                 </div>
               </div>
